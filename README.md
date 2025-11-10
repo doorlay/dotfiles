@@ -1,3 +1,2 @@
 ## Dotfiles 
-Backups of my vim configuration and zshell configuration files.  
-To backup, run `dotfilebu` and commit any changes.
+Backups of my vim and bash config files. To permanently switch a shell to bash, run `chsh -s path`, where path is one of the shell paths listed in /etc/shells.
