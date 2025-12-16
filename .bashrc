@@ -16,5 +16,12 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Make bash history more useful 
+export HISTSIZE=-1
+export HISTFILESIZE=-1
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -n"
+export HISTTIMEFORMAT="[%F %T] "
+
 # My aliases
-alias pi="ssh admin@192.168.50.242"
+alias pi="ssh admin@192.168.50.236"

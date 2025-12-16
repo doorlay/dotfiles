@@ -14,7 +14,6 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-vinegar'
-Plug 'dense-analysis/ale'
 Plug 'preservim/nerdcommenter'
 Plug 'Raimondi/delimitMate'
 " UI improvemets
@@ -22,8 +21,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'morhetz/gruvbox'
 " Language-specific improvements
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-scripts/indentpython.vim'
-Plug 'faith/vim-go'
 call plug#end()
 
 """"""""""""""""""""
