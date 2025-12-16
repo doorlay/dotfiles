@@ -17,8 +17,8 @@ esac
 # pnpm end
 
 # Make bash history more useful 
-export HISTSIZE=-1
-export HISTFILESIZE=-1
+export HISTSIZE=100000000
+export HISTFILESIZE=100000000
 shopt -s histappend
 export PROMPT_COMMAND="history -a; history -n"
 export HISTTIMEFORMAT="[%F %T] "
