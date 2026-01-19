@@ -24,4 +24,4 @@ export PROMPT_COMMAND="history -a; history -n"
 export HISTTIMEFORMAT="[%F %T] "
 
 # My aliases
-alias pi="ssh admin@192.168.0.105"
+alias pi="ssh admin@192.168.0.108"
