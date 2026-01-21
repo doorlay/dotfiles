@@ -78,6 +78,7 @@ link_file() {
 link_file bashrc
 link_file bash_profile
 link_file vimrc
+link_file inputrc
 link_file gitconfig
 
 log "Dotfiles installation complete"

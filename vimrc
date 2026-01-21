@@ -38,3 +38,4 @@ set wildmenu
 let mapleader = " "
 set tabstop=4
 set shiftwidth=4
+set noerrorbells
