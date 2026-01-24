@@ -1,5 +1,6 @@
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/Users/doorlay/Library/Python/3.9/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # Created by `pipx` on 2024-06-23 06:18:47
 export PATH="$PATH:/Users/doorlay/.local/bin"
