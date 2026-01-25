@@ -1,6 +1,7 @@
 ## Dotfiles 
 
-To install dotfiles on a new device:
+1. Install git and helix using your native package manager.
+2. Run the following to symlink all your local dotfiles to this repo and set your default shell to bash:
 ```
 git clone https://github.com/doorlay/dotfiles.git
 cd dotfiles
@@ -8,5 +9,5 @@ cd dotfiles
 ```
 
 #### Notes
-- `install.sh` is idempotent, so is safe to run many times
-- all local dotfiles are symlinked to this repository, which serves as the source of truth
+- Make desired updates to this repo, not your local dotfiles
+- `install.sh` is idempotent
