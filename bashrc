@@ -25,5 +25,4 @@ export PROMPT_COMMAND="history -a; history -n"
 export HISTTIMEFORMAT="[%F %T] "
 
 # My aliases
-alias login-firewall="ssh admin@192.168.0.108"
-alias login-pi="ssh admin@192.168.0.122"
+alias login-pi-one="ssh admin@192.168.1.216"
