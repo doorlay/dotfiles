@@ -10,6 +10,38 @@ log() {
     printf "[dotfiles] %s\n" "$1"
 }
 
+have() {
+    command -v "$1" >/dev/null 2>&1
+}
+
+install_pkg() {
+    if have apt-get; then
+        sudo apt-get update -y
+        sudo apt-get install -y "$@"
+    elif have brew; then
+        brew install "$@"
+    else
+        log "No supported package manager found. Install $* manually."
+        return 1
+    fi
+}
+
+# ---------------------------
+# Install prerequisites
+# ---------------------------
+
+MISSING=()
+
+have git || MISSING+=(git)
+have vim || MISSING+=(vim)
+
+if (( ${#MISSING[@]} > 0 )); then
+    log "Missing packages: ${MISSING[*]}"
+    install_pkg "${MISSING[@]}"
+else
+    log "git and vim already installed"
+fi
+
 # Set default shell to bash
 if [[ "$SHELL" != "$(command -v bash)" ]]; then
     log "Setting default shell to bash"
@@ -17,6 +49,10 @@ if [[ "$SHELL" != "$(command -v bash)" ]]; then
 else
     log "Default shell already bash"
 fi
+
+# ---------------------------
+# Dotfile symlink logic
+# ---------------------------
 
 link_file() {
     local name="$1"
@@ -39,11 +75,10 @@ link_file() {
     log "Linked .$name"
 }
 
-# Symlink all local dotfiles to this repo
 link_file bashrc
 link_file bash_profile
+link_file vimrc
 link_file inputrc
 link_file gitconfig
 
 log "Dotfiles installation complete"
-

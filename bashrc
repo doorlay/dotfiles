@@ -26,3 +26,4 @@ export HISTTIMEFORMAT="[%F %T] "
 
 # My aliases
 alias login-pi-one="ssh admin@192.168.1.216"
+export PATH="$(brew --prefix bison)/bin:$PATH"
