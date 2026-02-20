@@ -1,7 +1,5 @@
 ## Dotfiles 
-
-1. Install git and helix using your native package manager.
-2. Run the following to symlink all your local dotfiles to this repo and set your default shell to bash:
+Run the following to symlink all your local dotfiles to this repo and set your default shell to bash:
 ```
 git clone https://github.com/doorlay/dotfiles.git
 cd dotfiles
