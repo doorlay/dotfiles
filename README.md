@@ -1,17 +1,13 @@
-## Dotfiles 
-Install vim-plug:
+### Setup
 ```
+mkdir ~/.dotfiles && cd ~/.dotfiles
+git clone https://github.com/doorlay/dotfiles.git
+./install.sh
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-then run `:PlugInstall` within vim.
 
-Symlink your local dotfiles to this local repo:
-```
-git clone https://github.com/doorlay/dotfiles.git
-cd dotfiles
-./install.sh
-```
+then run `:PlugInstall` within vim.
 
 #### Notes
 - Make desired updates to this repo, not your local dotfiles.

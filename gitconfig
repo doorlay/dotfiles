@@ -2,11 +2,6 @@
 [user]
 	name = Nicholas Doorlay
 	email = nicholas@doorlay.com
-# Please adapt and uncomment the following lines:
-#	name = Nic Doorlay
-#	email = ndoorlay@gmail.com
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 [pull]
 	rebase = true
 
